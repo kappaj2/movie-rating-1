@@ -12,6 +12,7 @@ public class MoviesController {
 
     @GetMapping("/{movieId}")
     public Movie getMovieInfo(@PathVariable("movieId") String movieId) {
+        System.out.println("Getting movie info for moviId >"+movieId+"<");
         return new Movie(movieId, "Test name");
     }
 }
