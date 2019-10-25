@@ -6,9 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 import za.co.ajk.ratingsdataservice.model.Rating;
 import za.co.ajk.ratingsdataservice.model.UserRating;
 
-import java.util.Arrays;
-import java.util.List;
-
 @RestController
 @RequestMapping("/ratingsdata")
 public class RatingsController {
@@ -21,16 +18,10 @@ public class RatingsController {
     @RequestMapping("/users/{userId}")
     public UserRating getUserRating(@PathVariable String userId) {
 
-        System.out.println("Getting userRating for userId >"+userId+"<");
-
-        List<Rating> ratingsList = Arrays.asList(
-                new Rating("1234", 3),
-                new Rating("5678", 3)
-        );
+        System.out.println("Getting userRating for userId >" + userId + "<");
 
         UserRating userRating = new UserRating();
-        userRating.setUserRatings(ratingsList);
-
+        userRating.initData(userId);
         return userRating;
     }
 }
