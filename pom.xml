@@ -12,8 +12,8 @@
 	<groupId>za.co.ajk.movieinfoservice</groupId>
 	<artifactId>movie-micro-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>building-reactive-pipelines</name>
-	<description>Reactive Spring Cloud Stream projects to accompany my session Building Reactive Pipelines</description>
+	<name>movie-rating-service</name>
+	<description>Project to run micro services for movie ratings</description>
 
 	<properties>
 		<java.version>1.8</java.version>

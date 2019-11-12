@@ -12,10 +12,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="building-reactive-pipelines" target="1.8" />
       <module name="discovery-server" target="1.8" />
       <module name="movie-catalog-service" target="1.8" />
       <module name="movie-info-service" target="1.8" />
+      <module name="movie-micro-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
